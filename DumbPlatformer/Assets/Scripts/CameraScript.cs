@@ -7,7 +7,7 @@ public class CameraScript : MonoBehaviour
     private string direction;
     public Transform playerTransform;
 
-    private float rotateSpeed = 2f;
+    private float rotateSpeed = 1.5f;
     private float offsetY = 3.5f;
     // Start is called before the first frame update
     void Start()
@@ -30,16 +30,13 @@ public class CameraScript : MonoBehaviour
         {
             direction = "null";
         }
+
+        transform.position = Vector3.Lerp(transform.position, new Vector3(playerTransform.position.x, playerTransform.position.y, transform.position.z), 0.075f);
     }
 
     private void FixedUpdate()
     {
         cameraRot(direction);
-    }
-
-    private void LateUpdate()
-    {
-        transform.position = Vector3.Lerp(transform.position, new Vector3(playerTransform.position.x, playerTransform.position.y + offsetY, transform.position.z), 0.075f);
     }
 
     private void cameraRot(string _direction)

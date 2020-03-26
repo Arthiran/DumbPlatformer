@@ -7,7 +7,7 @@ public class MovementScript : MonoBehaviour
     public Transform cameraTransform;
     private Rigidbody rb;
 
-    private float gravity = -4.9f;
+    private float gravity = -9.8f;
     // Start is called before the first frame update
     void Start()
     {
