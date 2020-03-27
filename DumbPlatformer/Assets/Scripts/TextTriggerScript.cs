@@ -1,0 +1,32 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class TextTriggerScript : MonoBehaviour
+{
+    public GameObject TriggerText;
+    private int triggerCounter = 0;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = TriggerText.GetComponent<Animator>();
+    }
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.GetComponent<MovementScript>() != null && triggerCounter == 0)
+        {
+            triggerCounter++;
+            TriggerText.SetActive(true);
+            animator.SetBool("FadeOut", true);
+            StartCoroutine(DisableText());
+        }
+    }
+
+    private IEnumerator DisableText()
+    {
+        yield return new WaitForSeconds(5.0f);
+        TriggerText.SetActive(false);
+    }
+}
