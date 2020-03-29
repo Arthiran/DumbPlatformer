@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5310371044514230130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5310371045158662944}
@@ -60,9 +60,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 4
+  field of view: 100
+  orthographic: 0
+  orthographic size: 5.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -217,8 +217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 348}
-  m_SizeDelta: {x: 842.4, y: 238.1}
+  m_AnchoredPosition: {x: 0, y: -300}
+  m_SizeDelta: {x: 842.4, y: 238.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5310371044747119014
 CanvasRenderer:
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: lol, your first dead end, the first of many
+  m_text: a dead end, one of many
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0fee49acfa4d4de458a2734f3f51269e, type: 2}
   m_sharedMaterial: {fileID: 21781946394789652, guid: 0fee49acfa4d4de458a2734f3f51269e,
@@ -256,8 +256,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278247935
+  m_fontColor: {r: 1, g: 0.8855018, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 26
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -316,12 +316,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -0.95758986, w: -0.9947033}
   m_textInfo:
     textComponent: {fileID: 5310371044747119013}
-    characterCount: 43
+    characterCount: 23
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 5
+    wordCount: 6
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -647,8 +647,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 348}
-  m_SizeDelta: {x: 842.4, y: 238.1}
+  m_AnchoredPosition: {x: 0, y: -300}
+  m_SizeDelta: {x: 842.4, y: 238.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1783596524840721526
 CanvasRenderer:
@@ -686,8 +686,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278247935
+  m_fontColor: {r: 1, g: 0.8855018, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 26
+  m_firstOverflowCharacterIndex: 22
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -746,10 +746,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -0.95758986, w: -0.9947033}
   m_textInfo:
     textComponent: {fileID: 5470331750465587027}
-    characterCount: 43
+    characterCount: 27
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 5
+    wordCount: 6
     linkCount: 0
     lineCount: 2
     pageCount: 1

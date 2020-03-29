@@ -69,8 +69,10 @@
     <Compile Include="Assets\EdgeDetection\EdgeDetectPostProcessing.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\CloudsBoundsScript.cs" />
+    <Compile Include="Assets\Scripts\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\MovementScript.cs" />
     <Compile Include="Assets\Scripts\RotateBoundsScript.cs" />
+    <Compile Include="Assets\Scripts\SkyboxBlending.cs" />
     <Compile Include="Assets\Scripts\TextTriggerScript.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
